@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RideNow: Book fast, safe, and affordable rides anytime, anywhere in your city.">
+    <title>Ride Now</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <h2 class="logo">RideNow</h2>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking">Book Ride</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="dark-toggle" id="darkToggle" aria-label="Toggle Dark Mode">🌙</button>
+
+            <div class="menu-btn" id="menuBtn">☰</div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="fade-up">Your Ride,
+                <span class="highlight">Anytime</span>, Anywhere.</h1>
+            <p class="fade-up">Book fast, safe, and affordable rides in your city.</p>
+            <a href="#booking" class="btn fade-up">Book a Ride</a>
+        </div>
+
+        <div class="route-animation">
+            <img src="https://cdn-icons-png.flaticon.com/512/854/854894.png" alt="car" class="car">
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+
+        <div class="service-grid">
+            <div class="service-card fade-up">
+                <h3>Instant Rides</h3>
+                <p>Request a ride and get picked up within minutes.</p>
+            </div>
+
+            <div class="service-card fade-up">
+                <h3>Schedule Rides</h3>
+                <p>Book now and ride later at your own convenience.</p>
+            </div>
+
+            <div class="service-card fade-up">
+                <h3>Affordable Pricing</h3>
+                <p>Transparent and budget-friendly fares for every trip.</p>
+            </div>
+        </div>
+    </section>
+
+   <section class="booking" id="booking">
+        <h2>Book a Ride</h2>
+
+        <form class="booking-form" id="booking-form">
+            <input type="text" placeholder="Your Name" id="name" required>
+            <input type="email" placeholder="Your E-Mail" required>
+            <input type="text" placeholder="Pickup Location" list="pickup-locations" required>
+            <datalist id="pickup-locations">
+                <option value="City Center Mall">
+                <option value="Airport Terminal 1 (Departure)">
+                <option value="Main Train Station">
+                <option value="Home Address (Saved)">
+            </datalist>
+            
+            <input type="text" placeholder="Destination" list="destination-locations" required>
+            <datalist id="destination-locations">
+                <option value="Downtown Business District">
+                <option value="Museum of Art">
+                <option value="Central Park Entrance">
+                <option value="Gym/Fitness Center">
+            </datalist>
+            <input type="date" id="ride-date" required>
+            <input type="time" id="ride-time" required>
+            <button type="submit" class="btn">Book Now</button>
+        </form>
+        
+        <div id="booking-confirmation" class="confirmation-message" style="display: none;"></div>
+        </section>
+
+
+    <footer id="contact">
+        <h3>RideNow</h3>
+        <p>Comfortable. Fast. Reliable.</p>
+        <p>© 2025 RideNow. All Rights Reserved.</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+                                                  </html>
+                  
